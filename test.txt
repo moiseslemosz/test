@@ -1,0 +1,24 @@
+class Cliente {
+  constructor(Nome, Idade, Sexo, Cidade, Ocupacao) {
+    this.Nome = Nome;
+    this.Idade = Idade;
+    this.Sexo = Sexo;
+    this.Cidade = Cidade;
+    this.Ocupacao = Ocupacao;
+  }
+}
+
+class NotaFiscal {
+  Dados() {
+    console.log('Aqui estão os seus dados: ');
+  }
+}
+
+var cli = new Cliente();
+cli.Cidade = 'São Paulo';
+cli.Idade = 19;
+cli.Sexo = 'Masculino';
+cli.Nome = 'Moises';
+cli.Ocupacao = 'Programador';
+
+console.log(cli);
